@@ -22,7 +22,7 @@ UNSTABLE // EXPERIMENT 07 is a futuristic experimental interface designed around
 
 ## Live Demo
 
-
+https://ekta-chutani.github.io/unstable---experiment/
 
 ## Repository
 
