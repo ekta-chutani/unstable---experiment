@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNSTABLE  ---- Experiment 07</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+    <!-- Background decoration -->
+    <div class="grid"></div>
+    <div class="cursor-glow"></div>
+
+    <!--NAVIGATION-->
+    <nav>
+        <div class="nav-logo">UNSTABLE<span>//07</span></div>
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </nav>
+        
+    <!--SECTION1: HERO  -->
+    <section class="hero">
+        <div class="hero-content reveal">
+            <p class="eyebrow">
+                <span class="pulse"></span>
+                EXPERIMENT 07 / CLASSIFIED INTERFACE
+            </p>
+
+            <h1>
+                <span>UN</span>STABLE<span class="accent">.</span>
+            </h1>
+
+            <p class="hero-description">
+                 An interactive system with one simple instruction.
+                 <br>
+                 We strongly recommend that you follow it.
+            </p>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO BEGIN</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <div class="hero-number">07</div>
+    </section>
+
+
+
+
+
+    <!-- SECTION 2: SYSTEM DATA-->
+
+    <section class="system-section">
+        <div class="section-label reveal">
+            <span>01</span>
+            SYSTEM DIAGNOSTICS
+        </div>
+
+        <div class="system-grid">
+
+            <div class="system-text reveal">
+                <h2>
+                    Everything appears
+                    <span>normal.</span>
+                 </h2>
+
+                <p>
+                    The experiment was designed to measure curiosity, impulse control, and the human tendency to ignore extremely obvious instructions.
+                 </p>
+
+            </div>
+            <div class="system-stats">
+
+                <div class="data-row">
+                    <span>NEURAL RESPONSE</span>
+                    <strong class="fake-data" id="neuralResponse">87.42%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill fill-one"></div>
+                </div>
+
+            
+
+                <div class="data-row">
+                    <span>SYSTEM STABILITY</span>
+                    <strong class="fake-data" id="systemStability">94.08%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill fill-two"></div>
+                </div>
+
+                <div class="data-row">
+                    <span>SUBJECT COMPLIANCE</span>
+                    <strong class="fake-data" id="compliance">100%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill fill-three"></div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!--SECTION 3: THE BUTTON-->
+    <section class="button-section">
+        <div class="section-label reveal">
+            <span>02</span>
+            PRIMARY INTERACTION
+        </div>
+
+        <div class="button-content reveal">
+            <p class="small-message">
+                ONE VARIABLE REMAINS
+
+            </p>
+
+            <h2>
+                Whatever you do,
+                <span>don't press it.</span>
+
+            </h2>
+
+            <p id="warningMessage">
+                The system has remained perfectly stable for 4,382 days.
+            </p>
+
+            <div id="buttonArena">
+                <button id="unstableButton">
+                    <span>DO NOT PRESS</span>
+
+                </button>
+                
+            </div>
+
+            <div class="live-stats">
+                <span>NEURAL <strong id="liveNeural">87.42%</strong></span>
+                <span>STABILITY <strong id="liveStability">94.08%</strong></span>
+            </div>
+
+
+            <p class="attempt-text">
+                ATTEMPTS: <strong id="attempts">0</strong>
+                <span></span>
+                SCORE: <strong id="score">000</strong>
+            </p>
+        </div>
+
+    </section>
+
+
+<!--SECTION 4: INSTABILITY-->
+    <section class="instability-section" id="instabilitySection">
+
+            <div class="lock-overlay" id="instabilityLock">
+                LOCKED -- COMPLETE THE PRIMARY INTERACTION FIRST
+            </div>
+
+            <div class="section-label reveal">
+                <span>03</span>
+                SYSTEM INSTABILITY
+            </div>
+
+            <div class="instability-content reveal">
+            <p class="small-message error-text">
+                WARNING // UNEXPECTED BEHAVIOR DETECTED
+            </p>
+
+            <h2 id="challengeTitle">
+                The system is now
+                <span>learning from you.</span>
+            </h2>
+
+            <p id="challengeMessage">
+             Catch the Unstable Signal FIVE times.
+            </p>
+
+            <div class="challenge-panel">
+                <div class="challenge-top">
+                    <span>STABILITY TEST</span>
+
+                    <span>
+                        CAPTURES:
+                        <strong id="captures">0</strong>/5
+                    </span>
+                </div>
+
+                <div id="challengeArea">
+                    <button id="targetButton">
+                        CATCH
+                    </button>
+                </div>
+
+            </div>
+    
+        
+    
+        </div>
+
+    </section>
+
+    <!--SECTION 5: FINAL TEST-->
+    <section class="final-section">
+
+        <div class="lock-overlay" id="finalLock">
+            LOCKED -- COMPLETE THE STABILITY TEST FIRST
+        </div>
+
+        <div class="final-content reveal">
+            <p class="small-message">
+                FINAL PROTOCOL
+            </p>
+            <h2>
+                Can you react
+                <span>fast enough?</span>
+            </h2>
+            <p>
+                When the signal appears, click it before it disaapears.
+            </p>
+
+            <button id="startTest">
+                START FINAL TEST
+            </button>
+
+            <div id="reactionBox">
+                <p id="reactionMessage">
+                    Waiting for authorization....
+                </p>
+                <button id="reactionButton">
+                    SIGNAL
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--RESULT OVERLAY-->
+    <div id="resultOverlay">
+        <div class="result-card">
+            <p> EXPERIMENT COMPLETE</p>
+            <h2>
+                YOU CAUSED
+                <span>THIS.</span>
+            </h2>
+
+            <div class="final-score">
+                <span>FINAL SCORE</span>
+                <strong id="finalScore">000</strong>
+            </div>
+
+            <p id="resultText">
+                System stability could not be restored.
+            </p>
+
+            <button id="restartButton">
+                RUN AGAIN
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <span>EXPERIMENT 07</span>
+        <span>INTERACTION REQUIRED</span>
+        <span>2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
